@@ -1,0 +1,129 @@
+/* Home Page Container */
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif; /* Add modern font */
+}
+
+/* Full Background Image with parallax effect */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('slide2.jpeg') no-repeat center center/cover;
+  background-attachment: fixed; /* Creates parallax effect */
+  z-index: -2;
+  transition: transform 0.5s ease-out; /* Smooth transform on hover */
+}
+
+/* Gradient Overlay instead of flat color */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: -1;
+}
+
+/* Content Styling with improved spacing and animations */
+.content {
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.content h3 {
+  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+.content p {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Call to action button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(to right, #4a90e2, #5ca9fb);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Improved animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+  }
+}

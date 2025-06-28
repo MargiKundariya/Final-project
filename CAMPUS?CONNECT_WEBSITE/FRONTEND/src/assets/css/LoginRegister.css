@@ -1,0 +1,176 @@
+/* Main container */
+.cc-login-register-page {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+}
+
+/* Animation classes */
+.cc-animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cc-fade-in {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card styles */
+.cc-bg-glass {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.cc-shadow-5 {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature items */
+.cc-feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Form container */
+.cc-form-container {
+  width: 100%;
+}
+
+/* Toggle link */
+.cc-toggle-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cc-toggle-link:hover {
+  color: #0d47a1;
+}
+
+/* Login form specific styles */
+.cc-login-form .cc-forgot-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cc-login-form .cc-forgot-link:hover {
+  color: #0d47a1;
+}
+
+.cc-login-form .cc-submit-btn {
+  transition: all 0.3s ease;
+}
+
+.cc-login-form .cc-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(18, 102, 241, 0.5);
+}
+
+.cc-social-login .cc-social-btn {
+  transition: all 0.3s ease;
+}
+
+.cc-social-login .cc-social-btn:hover {
+  transform: translateY(-3px);
+}
+
+#signup{
+  text-align: center;
+}
+
+/* Register form specific styles */
+.cc-register-form .cc-form-title {
+  color: #1266f1;
+  font-weight: 600;
+}
+
+.cc-register-form .cc-password-group {
+  position: relative;
+}
+
+.cc-register-form .cc-toggle-password {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.cc-register-form .cc-progress-container {
+  margin-bottom: 2rem;
+}
+
+.cc-register-form .cc-progress-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cc-register-form .cc-progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #757575;
+}
+
+.cc-register-form .cc-progress-step.cc-active {
+  background-color: #1266f1;
+  color: white;
+}
+
+.cc-register-form .cc-progress-bar {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cc-register-form .cc-progress-bar-fill {
+  height: 100%;
+  background-color: #1266f1;
+  transition: width 0.3s ease;
+}
+
+.cc-register-form .cc-submit-btn {
+  transition: all 0.3s ease;
+}
+
+.cc-register-form .cc-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(18, 102, 241, 0.5);
+}
+
+.cc-register-form .cc-dropdown-toggle {
+  width: 100%;
+  text-align: left;
+  background-color: #0f2027;
+}
+
+.cc-register-form .cc-back-btn {
+  transition: all 0.3s ease;
+}
+
+.cc-register-form .cc-back-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.cc-register-form .cc-error-alert {
+  border-radius: 8px;
+  border-left: 4px solid #ff4444;
+}
+
+.cc-otp-container, .cc-success-container {
+  padding: 1rem;
+}

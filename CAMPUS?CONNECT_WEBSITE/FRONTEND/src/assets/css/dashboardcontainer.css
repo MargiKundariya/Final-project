@@ -1,0 +1,42 @@
+.enhanced-dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Align the items in a row with space between */
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-dashboard-container .dashboard-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex-basis: calc(33.333% - 20px); /* Each card takes up one-third of the container width, minus gap */
+  box-sizing: border-box;
+}
+
+.enhanced-dashboard-container .dashboard-item:hover {
+  transform: translateY(-5px);
+}
+
+.enhanced-dashboard-container p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Ensure the cards stack on smaller screens */
+@media (max-width: 768px) {
+  .enhanced-dashboard-container .dashboard-item {
+    flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .enhanced-dashboard-container .dashboard-item {
+    flex-basis: 100%; /* One card per row on very small screens */
+  }
+}

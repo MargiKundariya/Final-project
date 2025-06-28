@@ -1,0 +1,103 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Space between logo and menu */
+  background-color: #fff;
+  padding: 15px 30px;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo and Company Name Container */
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.company-name h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+/* Menu Styles */
+.menu {
+  display: flex; /* Display links in a row */
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between links */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center; /* Vertically center icons and text */
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default on larger screens */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column; /* Display links vertically */
+    position: absolute;
+    top: 70px;
+    right: 0; /* Align menu to the right */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.dropdown-open {
+    display: flex; /* Show dropdown menu */
+  }
+
+  .menu a {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+    color: #000;
+  }
+}

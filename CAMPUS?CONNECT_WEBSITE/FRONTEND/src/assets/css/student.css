@@ -1,0 +1,122 @@
+/* StudentTable.css */
+#student-table-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#table-title {
+  /* background-color:white; */
+  color:rgb(34, 55, 172);
+  font-weight: bold;
+  padding: 0px 15px 15px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+#no-students-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  font-weight: bold;
+}
+
+#student-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+#student-details-table thead {
+  background-color: rgb(34, 55, 172);
+  color: white;
+}
+
+#student-details-table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #333;
+  font-weight: 600;
+}
+
+#student-details-table .student-row {
+  transition: background-color 0.3s ease;
+}
+
+#student-details-table .student-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#student-details-table .student-row:hover {
+  background-color: #e6f2ff;
+}
+
+#student-details-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+
+.search-input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Search Button (Original Design) */
+.search-button {
+  --color: rgb(34, 55, 172);
+  font-family: inherit;
+  display: inline-block;
+  width: 5em;
+  height: 40px;
+  line-height: 1.6;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+.search-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 200px;
+  width: 180%;
+  border-radius: 20%;
+}
+
+.search-button:hover {
+  color: #fff;
+}
+
+.search-button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.search-button:hover:before {
+  top: -30px;
+  left: -30px;
+}

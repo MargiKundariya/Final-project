@@ -1,0 +1,110 @@
+/* Overall Container for Certificates */
+#certificates-container {
+  padding: 20px;
+}
+
+/* Main Heading for Certificates */
+#certificates-heading {
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Purple-to-blue gradient */
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#certificates-heading .card-icon {
+  font-size: 1.5rem;
+}
+
+/* Certificate Cards Container - Added this to create a flex container */
+#certificates-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Individual Certificate Card */
+#certificate-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  /* Set width to make cards appear side by side */
+  width: calc(33.333% - 20px);
+  min-width: 300px;
+  flex-grow: 0;
+}
+
+/* Certificate Heading */
+#certificate-card .card-heading {
+  font-weight: 600;
+  color: #333; /* Normal text color */
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#certificate-card .card-heading h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  /* Added to handle long titles */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Certificate Body */
+#certificate-card .card-body {
+  padding: 15px;
+}
+
+#certificate-card .card-body img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  height: auto;
+  object-fit: contain;
+}
+
+#certificate-card .card-body p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Download Button */
+.download-btn {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  #certificate-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  #certificate-card {
+    width: 100%;
+  }
+}

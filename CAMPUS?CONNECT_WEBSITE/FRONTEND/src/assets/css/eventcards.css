@@ -1,0 +1,202 @@
+/* EventCards.css with specific ID-based selectors to prevent clashing */
+
+#event-cards-section .event-cards-title {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(34, 55, 172);
+    font-weight: bold;
+  }
+  
+  #event-cards-section .event-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  #event-cards-section .event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #event-cards-section .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #event-cards-section .event-card-header {
+    background-color: rgb(34, 55, 172);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #event-cards-section .event-name {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #event-cards-section .event-actions {
+    border: none;
+    background: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #event-cards-section .action-btn {
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+ 
+  #event-cards-section .edit-btn {
+    background-color: #4CAF50;
+  }
+  
+  #event-cards-section .delete-btn {
+    background-color: #f44336;
+  }
+
+  #event-cards-section .edit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  #event-cards-section .delete-btn:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  
+  #event-cards-section .event-card-body {
+    padding: 15px;
+  }
+  
+  #event-cards-section .event-info-row {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  
+  #event-cards-section .event-info-item {
+    flex: 1;
+    min-width: 140px;
+    margin-bottom: 10px;
+  }
+  
+  #event-cards-section .info-label {
+    font-weight: 600;
+    color: #555;
+    margin-right: 5px;
+  }
+  
+  #event-cards-section .info-value {
+    color: #333;
+    display: flex;
+  }
+  
+  #event-cards-section .event-description, 
+  #event-cards-section .event-criteria, 
+  #event-cards-section .event-coordinators {
+    margin-bottom: 15px;
+  }
+  
+  #event-cards-section .event-description h4, 
+  #event-cards-section .event-criteria h4, 
+  #event-cards-section .event-coordinators h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #event-cards-section .scrollable-content {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #event-cards-section .scrollable-content::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  #event-cards-section .scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  #event-cards-section .event-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  #event-cards-section .attachment-link, 
+  #event-cards-section .scanner-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  #event-cards-section .attachment-link:hover, 
+  #event-cards-section .scanner-link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #event-cards-section .attachment-link i, 
+  #event-cards-section .scanner-link i {
+    margin-right: 5px;
+  }
+  
+  #event-cards-section .no-events-message {
+    text-align: center;
+    padding: 50px;
+    color: #777;
+    font-size: 18px;
+  }
+  
+  #event-cards-section .loading-container {
+    text-align: center;
+    padding: 50px;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #event-cards-section .event-cards-container {
+      grid-template-columns: 1fr;
+    }
+    
+    #event-cards-section .event-info-row {
+      flex-direction: column;
+    }
+    
+    #event-cards-section .event-info-item {
+      margin-bottom: 10px;
+    }
+  }

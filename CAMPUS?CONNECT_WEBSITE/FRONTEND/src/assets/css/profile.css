@@ -1,0 +1,134 @@
+/* Profile Container */
+#profile-container {
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Header Section */
+#profile-header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #1434a4, #2575fc);
+  color: #fff;
+}
+
+
+
+#profile-name {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Profile Info Section */
+#profile-info {
+  padding: 20px;
+}
+
+.profile-field {
+  margin-bottom: 15px;
+}
+
+#profile-dob label,
+#profile-contact label,
+#profile-address label,
+#profile-bloodGroup label,
+#profile-email label,
+#profile-role label,
+#profile-name label {
+  display: block;
+  font-size: 14px;
+  color: #1434a4;
+  margin-bottom: 5px;
+}
+
+#profile-dob input,
+#profile-contact input,
+#profile-address input,
+#profile-bloodGroup input,
+#profile-email input,
+#profile-role input ,
+#profile-name input{
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+input:disabled {
+  background: #f5f5f5;
+  color: #888;
+  cursor: not-allowed;
+}
+
+input:focus {
+  border: 1px solid #1434a4;
+  outline: none;
+}
+
+/* Buttons Section */
+#profile-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#edit-btn,
+#save-btn,
+#cancel-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+#edit-btn {
+  background: #1434a4;
+  color: #fff;
+}
+
+#save-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+#cancel-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+#profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  background: #fff;
+  color: #1434a4;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 80px;
+  border-radius: 50%;
+  overflow: hidden; /* Ensures image stays within circular bounds */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the full area */
+  border-radius: 50%;
+  display: block;
+}
+

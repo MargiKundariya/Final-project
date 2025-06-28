@@ -1,0 +1,141 @@
+.idcard-upload-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.idcard-upload-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input-container {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.file-input-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  color: #555;
+}
+
+.file-input-label:hover {
+  border-color: #007bff;
+  background-color: #eef6ff;
+}
+
+.file-icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.generate-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.generate-button:disabled {
+  background-color: #b8d4fc;
+  cursor: not-allowed;
+}
+
+.generate-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loading-spinner {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.generated-cards-section {
+  margin-top: 30px;
+}
+
+.cards-title {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.card-item {
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.card-details {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}

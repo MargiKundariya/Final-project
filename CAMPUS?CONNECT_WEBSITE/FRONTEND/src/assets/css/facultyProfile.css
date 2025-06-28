@@ -1,0 +1,188 @@
+/* Faculty Profile CSS */
+.faculty-profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .faculty-profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+  }
+  
+  .faculty-profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+  }
+  
+  .faculty-profile-header h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faculty-profile-header p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .faculty-profile-form {
+    margin-bottom: 2rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-field {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  .form-field input:disabled,
+  .form-field select:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  .readonly-field {
+    background-color: #f9f9f9 !important;
+    cursor: not-allowed !important;
+  }
+  
+  .form-field small {
+    display: block;
+    margin-top: 0.3rem;
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .primary-btn {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background-color: #3a7bc8;
+  }
+  
+  .cancel-btn {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* Password Section */
+  .password-section {
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+  }
+  
+  .password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 1rem;
+  }
+  
+  .password-header h3 {
+    color: #333;
+    margin: 0;
+  }
+  
+  .toggle-icon {
+    color: #4a90e2;
+    font-size: 18px;
+  }
+  
+  .password-form {
+    padding-top: 1rem;
+  }
+  
+  /* Loading state */
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .faculty-profile-card {
+      padding: 1.5rem;
+    }
+    
+    .form-field {
+      min-width: 100%;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }

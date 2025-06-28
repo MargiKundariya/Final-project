@@ -1,0 +1,132 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Overall Dashboard Container */
+  #main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Card */
+  #profile-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Content Section */
+  #main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ID Card */
+/* ID Card */
+#idcard-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for all ID cards */
+.id-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual ID card container */
+.id-card-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+/* ID card image */
+.id-card-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Download button */
+.download-btn {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: auto; /* Push button to bottom */
+}
+
+.download-btn:hover {
+  background-color: #2c5282;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 640px) {
+  .id-card-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+}  
+  /* Profile Heading */
+  #profile-card .card-heading {
+    font-weight: 50;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Blue gradient */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ID Card Heading */
+  #idcard-card .card-heading {
+    font-weight: 50;
+    color: #fff;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Purple-to-blue gradient */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Shared Icon Style */
+  .card-icon {
+    font-size: 1.5rem;
+  }
+  
